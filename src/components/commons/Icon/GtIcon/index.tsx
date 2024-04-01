@@ -12,7 +12,12 @@ const GtIcon = ({name, size, color, ...props}: GtIconProps) => {
 
   const TargetIcon = Icons[name];
   return TargetIcon ? (
-    <TargetIcon height={size} width={iconSize} color={iconColor} {...props} />
+    <TargetIcon
+      height={iconSize}
+      width={iconSize}
+      color={iconColor}
+      {...props}
+    />
   ) : (
     <></>
   );

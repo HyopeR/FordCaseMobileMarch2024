@@ -3,7 +3,7 @@ import {SET_THEME_MODE} from './theme.constant';
 
 export const toggleThemeMode = (): AppThunk => {
   return async (dispatch: AppDispatch, getState) => {
-    const {mode} = getState().themeRepo;
+    const {mode} = getState().themeSto;
     const newMode = mode === 'light' ? 'dark' : 'light';
 
     dispatch({

@@ -11,6 +11,7 @@
       "@routes/*": ["./src/routes/*"],
       "@routes": ["./src/routes"],
       "@screens/*": ["./src/screens/*"],
+      "@services/*": ["./src/services/*"],
       "@stores/*": ["./src/stores/*"],
       "@stores": ["./src/stores"],
       "@actions/*": ["./src/stores/actions/*"],

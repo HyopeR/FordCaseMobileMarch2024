@@ -1,3 +1,7 @@
+import layoutStyles from './layout';
+
+export {layoutStyles};
+
 export const fontStyles = {
   big: 24,
   title: 17,

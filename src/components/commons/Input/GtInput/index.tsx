@@ -20,7 +20,7 @@ const GtInput = (
       width && {width},
       height && {height},
     ] as any;
-  }, [color, colors.backgroundSecondary, colors.text, height, width]);
+  }, [color, colors.backgroundSecondary, colors.text, editable, height, width]);
 
   return (
     <>

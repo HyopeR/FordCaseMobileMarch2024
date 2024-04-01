@@ -1,6 +1,6 @@
 import {AnyAction, Reducer} from 'redux';
 import {MemoryReducerState} from './memory.type';
-import {SET_SPLASH, SET_READY} from '@actions/MemoryAction/memory.constant';
+import {MemoryConst} from '@actions/MemoryAction';
 
 const initialState = {
   isSplash: true,
@@ -12,13 +12,13 @@ export const memoryReducer: Reducer<MemoryReducerState> = (
   action: AnyAction,
 ) => {
   switch (action.type) {
-    case SET_SPLASH:
+    case MemoryConst.SET_SPLASH:
       return {
         ...state,
         isSplash: action.payload,
       };
 
-    case SET_READY:
+    case MemoryConst.SET_READY:
       return {
         ...state,
         isReady: action.payload,

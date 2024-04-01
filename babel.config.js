@@ -33,6 +33,7 @@ module.exports = {
           '@helpers': './src/helpers',
           '@routes': './src/routes',
           '@screens': './src/screens',
+          '@services': './src/services',
           '@stores': './src/stores',
           '@actions': './src/stores/actions',
           '@reducers': './src/stores/reducers',

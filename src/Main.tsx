@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react';
+import React, {useEffect, useMemo} from 'react';
 import {StatusBar, StyleSheet} from 'react-native';
 import {useAppDispatch, useAppSelector} from '@stores/hooks';
 import {getTheme, ThemeMode} from '@styles/theme';
@@ -7,19 +7,28 @@ import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
 import {Router} from '@routes';
 import {AppSplash} from '@components/specifics';
-import {setReady} from '@actions/MemoryAction/memory.action';
+import {MemoryAct} from '@actions/MemoryAction';
+import {Connector} from '@services/Connector';
 
 const Main = () => {
   const dispatch = useAppDispatch();
 
-  const {mode} = useAppSelector(store => store.themeRepo);
-  const {isReady, isSplash} = useAppSelector(store => store.memoryRepo);
+  const {mode} = useAppSelector(store => store.themeSto);
+  const {isReady, isSplash} = useAppSelector(store => store.memorySto);
+
+  useEffect(() => {
+    Connector.register();
+
+    return () => {
+      Connector.unregister();
+    };
+  }, [dispatch]);
 
   const theme = useMemo(() => getTheme(mode as ThemeMode), [mode]);
   const ready = useMemo(() => isReady && !isSplash, [isReady, isSplash]);
 
   const onReady = () => {
-    dispatch(setReady(true));
+    dispatch(MemoryAct.setReady(true));
   };
 
   const onStateChange = () => {

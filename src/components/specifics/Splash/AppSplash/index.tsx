@@ -3,7 +3,7 @@ import {Animated, StyleSheet} from 'react-native';
 import {GtView} from '@components/commons';
 import {GtLayout} from '@components/layouts';
 import {useAppDispatch, useAppSelector} from '@stores/hooks';
-import {setSplash} from '@actions/MemoryAction/memory.action';
+import {MemoryAct} from '@actions/MemoryAction';
 import {fontStyles} from '@styles';
 import {getAnimation} from './animation';
 import {AppSplashProps} from './index.type';
@@ -11,14 +11,14 @@ import {AppSplashProps} from './index.type';
 const AppSplash = ({}: AppSplashProps) => {
   const dispatch = useAppDispatch();
 
-  const {isSplash} = useAppSelector(store => store.memoryRepo);
+  const {isSplash} = useAppSelector(store => store.memorySto);
 
   const {interpolates, animation} = useMemo(() => getAnimation(), []);
 
   useEffect(() => {
     if (isSplash) {
       animation.parallel.start(async () => {
-        dispatch(setSplash(false));
+        dispatch(MemoryAct.setSplash(false));
       });
     }
 

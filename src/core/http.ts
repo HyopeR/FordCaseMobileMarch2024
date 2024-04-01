@@ -10,26 +10,11 @@ const AxiosClient = axios.create({
 
 class Http {
   client = AxiosClient;
-
-  get = (url: string, config?: AxiosRequestConfig) => {
-    return this.client.get(url, config);
-  };
-
-  post = (url: string, body?: any, config?: AxiosRequestConfig) => {
-    return this.client.post(url, body, config);
-  };
-
-  put = (url: string, body?: any, config?: AxiosRequestConfig) => {
-    return this.client.put(url, body, config);
-  };
-
-  patch = (url: string, body?: any, config?: AxiosRequestConfig) => {
-    return this.client.patch(url, body, config);
-  };
-
-  delete = (url: string, config?: AxiosRequestConfig) => {
-    return this.client.delete(url, config);
-  };
+  get = this.client.get;
+  post = this.client.post;
+  put = this.client.put;
+  patch = this.client.patch;
+  delete = this.client.delete;
 }
 
 export const http = new Http();

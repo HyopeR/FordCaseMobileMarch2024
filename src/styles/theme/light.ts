@@ -4,7 +4,7 @@ export default {
   dark: false,
   colors: {
     primary: 'rgb(238, 85, 39)',
-    primaryLight: 'rgb(231, 130, 98)',
+    primaryLight: 'rgb(255,133,94)',
     primaryDark: 'rgb(163, 61, 28)',
 
     text: 'rgb(28, 28, 28)',

@@ -4,8 +4,14 @@ import {api} from '@core/url';
 class UserApi {
   base = `${api}/users`;
 
-  getUserRepos = async (username: string, config: HttpRequestConfig) => {
-    return http.get(`${this.base}/${username}/repos`, config).toPromiseArray();
+  getUser = async <T>(username: string, config?: HttpRequestConfig) => {
+    return http.get<T>(`${this.base}/${username}`, config).toPromiseArray();
+  };
+
+  getUserRepos = async <T>(username: string, config?: HttpRequestConfig) => {
+    return http
+      .get<T>(`${this.base}/${username}/repos`, config)
+      .toPromiseArray();
   };
 }
 

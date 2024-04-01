@@ -1,10 +1,14 @@
+export {default as Bug} from './Bug';
 export {default as ChevronLeft} from './ChevronLeft';
 export {default as ChevronRight} from './ChevronRight';
+export {default as CodeBraces} from './CodeBraces';
 export {default as Col1} from './Col1';
 export {default as Col2} from './Col2';
 export {default as Col3} from './Col3';
 export {default as Dark} from './Dark';
 export {default as Edit} from './Edit';
+export {default as Eye} from './Eye';
+export {default as Fork} from './Fork';
 export {default as Light} from './Light';
 export {default as Menu} from './Menu';
 export {default as MoreVertical} from './MoreVertical';

@@ -1,4 +1,5 @@
+import AppDrawer, {AppDrawerProps} from './Router/AppDrawer';
 import AppSplash, {AppSplashProps} from './Splash/AppSplash';
 
-export {AppSplash};
-export type {AppSplashProps};
+export {AppDrawer, AppSplash};
+export type {AppDrawerProps, AppSplashProps};

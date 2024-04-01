@@ -1,6 +1,6 @@
 import {AnyAction, Reducer} from 'redux';
 import {ThemeReducerState} from './theme.type';
-import {SET_THEME_MODE} from '@actions/ThemeAction/theme.constant';
+import {ThemeConst} from '@actions/ThemeAction';
 
 const initialState = {
   mode: 'light',
@@ -11,7 +11,7 @@ export const themeReducer: Reducer<ThemeReducerState> = (
   action: AnyAction,
 ) => {
   switch (action.type) {
-    case SET_THEME_MODE:
+    case ThemeConst.SET_THEME_MODE:
       return {
         ...state,
         mode: action.payload,
