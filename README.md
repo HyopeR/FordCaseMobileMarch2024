@@ -1,7 +1,7 @@
 # Ford Otosan Case Mobile March 2024
 
 ### **Merhaba** 👋
-- Projeye environemnt yapılandırması eklenmiştir. Test etmeden önce kök dizinde **.env** adından bir dosya oluşturup **.env.example** dosyasına göre düzenleyin ve github tokeninizi ekleyin.
+- Projeye environment yapılandırması eklenmiştir. Test etmeden önce kök dizinde **.env** adından bir dosya oluşturup **.env.example** dosyasına göre düzenleyin ve github tokeninizi ekleyin.
 - Test projesi kapsamında yer alan çoğu madde yapılmıştır.
 - Proje typescript kullanarak hazırlanmıştır.
 - Proje genelde kendi projelerimde kullandığım bir mimariye sahip.
