@@ -1,17 +1,16 @@
 # Ford Otosan Case Mobile March 2024
 
 ### **Merhaba** 👋
-- Projeye Environment yapılandırması ekledim. Test etmeden önce **.env** adından bir dosya oluşturup **.env.example** dosyasına göre düzenleyin ve github tokeninizi ekleyin.
+- Projeye environemnt yapılandırması eklenmiştir. Test etmeden önce kök dizinde **.env** adından bir dosya oluşturup **.env.example** dosyasına göre düzenleyin ve github tokeninizi ekleyin.
 - Test projesi kapsamında yer alan çoğu madde yapılmıştır.
-- Proje typescript kullanarak hazırlamıştır.
+- Proje typescript kullanarak hazırlanmıştır.
 - Proje genelde kendi projelerimde kullandığım bir mimariye sahip.
-- Özel işlemlerin çoğunu (Pagination, Search, Storage) özel servisler kullanarak çözüm ürettim.
 
 
 ### **Eksik kısımlar**
 - Projenin veritabanı ile ilgili kısmı süre aşımı sebebiyle yazılamamıştır.
-- Projeye dahil edilmiş olan bu paketler **Typeorm** ve **react-native-quick-sqlite** bu işleri gerçekleştirmek için eklenmiştir ancak geliştirme yapılmamıştır.
-- Dilerseniz veritabanı kullanmış olduğum örnek bir projeyi inceleyebilirsiniz.
+- Projeye dahil edilmiş olan bu paketler **Typeorm** ve **react-native-quick-sqlite** bu işlemleri gerçekleştirmek için eklenmiştir ancak geliştirme yapılmamıştır.
+- Dilerseniz veritabanı kullanmış olduğum örnek bir uygulamayı indirip inceleyebilirsiniz.
 
 Google: https://play.google.com/store/apps/details?id=com.cityzore.audioguide <br />
 Apple: https://apps.apple.com/app/id1628086152
