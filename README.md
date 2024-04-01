@@ -1,79 +1,88 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Ford Otosan Case Mobile March 2024
 
-# Getting Started
+### **Merhaba** 👋
+- Projeye Environment yapılandırması ekledim. Test etmeden önce **.env** adından bir dosya oluşturup **.env.example** dosyasına göre düzenleyin ve github tokeninizi ekleyin.
+- Test projesi kapsamında yer alan çoğu madde yapılmıştır.
+- Proje typescript kullanarak hazırlamıştır.
+- Proje genelde kendi projelerimde kullandığım bir mimariye sahip.
+- Özel işlemlerin çoğunu (Pagination, Search, Storage) özel servisler kullanarak çözüm ürettim.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-## Step 1: Start the Metro Server
+### **Eksik kısımlar**
+- Projenin veritabanı ile ilgili kısmı süre aşımı sebebiyle yazılamamıştır.
+- Projeye dahil edilmiş olan bu paketler **Typeorm** ve **react-native-quick-sqlite** bu işleri gerçekleştirmek için eklenmiştir ancak geliştirme yapılmamıştır.
+- Dilerseniz veritabanı kullanmış olduğum örnek bir projeyi inceleyebilirsiniz.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+Google: https://play.google.com/store/apps/details?id=com.cityzore.audioguide <br />
+Apple: https://apps.apple.com/app/id1628086152
 
-To start Metro, run the following command from the _root_ of your React Native project:
 
-```bash
-# using npm
-npm start
+## Informations
+- This document contains information about the project.
 
-# OR using Yarn
-yarn start
-```
+- The project was developed with **Typescript**.
 
-## Step 2: Start your Application
+- Brief information about the application content.
+   - Environment configuration was done with **react-native-config**.
+   - Http requests were made with integrated **axios**.
+   - Made with **redux** for global state management.
+   - Navigation operations were done with **react-navigation**.
+   - Theme operations were done with **react-navigation**.
+   - Various class services have been added in accordance with the Singleton and Factory design pattern to perform various tasks. **[Navigation, Storage, Paginator, Searcher, Connector]**
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
-### For Android
+## Getting started
+1. Clone the project.<br/>
+   ```bash
+   git clone https://github.com/HyopeR/FordCaseMobileMarch2024.git
+   ```
 
-```bash
-# using npm
-npm run android
+2. Go to the root directory of the project.<br/>
+   ```bash
+   cd YOUR_PATH/FordCaseMobileMarch2024
+   ```
 
-# OR using Yarn
-yarn android
-```
+3. Install project dependencies.<br/>
+   ```bash
+   npm install
+   ```
 
-### For iOS
+4. Setting environment variables. Create **.env** file in the project's main directory. Fill this file according to the **.env.example** file.<br/>
+   ```bash
+   touch .env
+   open .env
+   ```
 
-```bash
-# using npm
-npm run ios
+5. **[For Mac users only]** Install pods.<br/>
+   ```bash
+   cd ios
+   pod install
+   ```
 
-# OR using Yarn
-yarn ios
-```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## App preview
+<table style="width: 100%">
+  <tr>
+    <th style="width: 33%">01-Ios Home</th>
+    <th style="width: 33%">02-Ios Drawer</th>
+    <th style="width: 33%">03-Ios Detail</th>
+  </tr>
+  <tr>
+    <td style="text-align: center"></td>
+    <td style="text-align: center"></td>
+    <td style="text-align: center"></td>
+  </tr>
+</table>
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+<table style="width: 100%">
+  <tr>
+    <th style="width: 33%">04-Android Home</th>
+    <th style="width: 33%">05-Android Drawer</th>
+    <th style="width: 33%">06-Android Detail</th>
+  </tr>
+  <tr>
+    <td style="text-align: center"></td>
+    <td style="text-align: center"></td>
+    <td style="text-align: center"></td>
+  </tr>
+</table>
