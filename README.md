@@ -67,9 +67,15 @@ Apple: https://apps.apple.com/app/id1628086152
     <th style="width: 33%">03-Ios Detail</th>
   </tr>
   <tr>
-    <td style="text-align: center"></td>
-    <td style="text-align: center"></td>
-    <td style="text-align: center"></td>
+    <td style="text-align: center">
+       <img src="https://github.com/HyopeR/FordCaseMobileMarch2024/assets/36919703/bbf222e9-a73d-4b7d-a863-9db28e1474e3" />
+    </td>
+    <td style="text-align: center">
+       <img src="https://github.com/HyopeR/FordCaseMobileMarch2024/assets/36919703/7614d1ab-eac5-4f91-89f4-17789784ecc6" />
+    </td>
+    <td style="text-align: center">
+       <img src="https://github.com/HyopeR/FordCaseMobileMarch2024/assets/36919703/66ba19f1-2fb8-4388-a859-375a7f815d07" />
+    </td>
   </tr>
 </table>
 
@@ -80,8 +86,15 @@ Apple: https://apps.apple.com/app/id1628086152
     <th style="width: 33%">06-Android Detail</th>
   </tr>
   <tr>
-    <td style="text-align: center"></td>
-    <td style="text-align: center"></td>
-    <td style="text-align: center"></td>
+    <td style="text-align: center">
+       <img src="https://github.com/HyopeR/FordCaseMobileMarch2024/assets/36919703/e4883d6f-50d4-4518-a07c-99482b18f089" />
+    </td>
+    <td style="text-align: center">
+       <img src="https://github.com/HyopeR/FordCaseMobileMarch2024/assets/36919703/bce18f1b-92c0-4895-8693-74d390fd3b4d" />
+    </td>
+    <td style="text-align: center">
+       <img src="https://github.com/HyopeR/FordCaseMobileMarch2024/assets/36919703/8e74ea76-2498-465e-9a82-8a840063534d" />
+    </td>
   </tr>
 </table>
+
